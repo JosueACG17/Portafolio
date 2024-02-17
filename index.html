@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <Link href="styles.css" rel="stylesheet">
+</head>
+
+<style>
+    body {
+        overflow-y: scroll;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+        width: 0;
+    }
+    
+</style>
+
+
+<body>
+    <header class="header ">
+        <nav class="bg-transparent border-gray-200 ">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <p class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="./hacker.png" class="h-8" alt="Flowbite Logo" />
+                    <span
+                        class="self-center text-xl font-sans text-white font-semibold whitespace-nowrap dark:text-white">Josue</span>
+                </p>
+                <button id="toggleMenuBtn" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:border-white focus:outline-none focus:ring-2 focus:ring-gray-200"
+                    aria-controls="navbar-default" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                    <ul
+                        class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 ">
+                        <li>
+                            <a href="#sobremi"
+                                class="block py-2 px-3 text-white rounded hover:bg-blue-100 hover:text-black  md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0 ">Sobre
+                                Mi</a>
+                        </li>
+                        <li>
+                            <a href="#tecnologias"
+                                class="block py-2 px-3 text-white rounded hover:bg-blue-100 hover:text-black md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0 ">Tecnologias</a>
+                        </li>
+                        <li>
+                            <a href="#proyectos"
+                                class="block py-2 px-3 text-white rounded hover:bg-blue-100 hover:text-black md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0 ">Proyectos</a>
+                        </li>
+                        <li>
+                            <a href="#contacto"
+                                class="block py-2 px-3 text-white rounded hover:bg-blue-100 hover:text-black md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0 ">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container px-6 py-12 mx-auto">
+            <div class="items-center lg:flex">
+                <div class="w-full lg:w-1/2">
+                    <div class="lg:max-w-lg">
+                        <h1 class="text-6xl font-extrabold text-center ">
+                            <span
+                                class="text-white bg-gradient-to-tr bg-clip-text from-blue-700 via-green-800 to-red-500 ">
+                                ¡Hola, soy
+                            </span>
+                            <span class="text-yellow-500 ">
+                                Josue
+                            </span>
+                            <span
+                                class="text-white bg-gradient-to-tr bg-clip-text from-green-700 via-blue-800 to-red-500 ">
+                                Chan Gutierrez!
+                            </span>
+                        </h1>
+                        <div class="mt-10 ml-4">
+                            <p class="font-semibold text-xl text-justify text-white">
+                                ¡Bienvenido a mi mundo creativo! Soy un desarrollador con un compromiso inquebrantable
+                                hacia la excelencia y la innovación. Este espacio es una ventana a mi trayectoria, un
+                                lugar donde podrás explorar mi trabajo.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-center w-full mt-6 lg:mt-0 lg:w-1/2">
+                    <img class="w-full h-full rounded-lg lg:max-w-3xl" src="./Hero_section.gif" alt="Imagen-section">
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="media-luna"></div>
+
+    <!---SOBRE MI-->
+
+    <div class="px-4 py-16 mt-2  mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+        <div class="grid gap-5 row-gap-10 lg:grid-cols-2" id="sobremi">
+            <div class="flex flex-col justify-center">
+                <div class="max-w-xl mb-6">
+                    <h2
+                        class="max-w-lg mb-4 text-center font-sans text-5xl font-bold tracking-tight text-gray-900 sm:leading-none">
+                        Sobre mí
+                    </h2>
+                    <p class="text-lg text-black font-medium text-justify">
+                        Desde una edad temprana descubrí mi gusto por la programación, este gusto me impulsó a seguir
+                        buscando conocimientos y mejorar personalmente. A lo largo de estos años, he buscado mejorar mis
+                        habilidades y conocimientos, lo que me ha permitido lograr completar algunas metas y luchas por
+                        las demás.
+                    </p>
+                </div>
+                <div class="flex -mx-2 mb-3">
+                    <a href="https://www.linkedin.com/in/josue-antonio-chan-gutierrez-0493352b4/" class="mx-2 "
+                        aria-label="Linkedin">
+                        <img class="w-8 h-8 text-white transition-colors duration-200 hover:text-blue-500 fill-current"
+                            src="https://cdn-icons-png.freepik.com/256/3536/3536505.png?ga=GA1.1.295903305.1708038180&semt=ais"
+                            alt="">
+                    </a>
+                    <a href="mailto:cgjosue17@gmail.com" class="mx-2 " aria-label="Gmail">
+                        <img class="w-8 h-8 text-white transition-colors duration-200 hover:text-blue-500 fill-current"
+                            src="https://cdn-icons-png.freepik.com/256/10829/10829119.png?ga=GA1.1.295903305.1708038180&semt=ais"
+                            alt="">
+                    </a>
+
+                    <a href="https://www.facebook.com/Josue15CG?mibextid=ZbWKwL"
+                        class="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
+                        aria-label="Facebook">
+                        <img class="w-8 h-8  text-white transition-colors duration-200 hover:text-blue-500 fill-current"
+                            src="https://cdn-icons-png.freepik.com/256/5968/5968764.png?ga=GA1.1.295903305.1708038180&semt=ais"
+                            alt="">
+                    </a>
+
+                    <a href="https://github.com/JosueACG17"
+                        class="mx-2 text-gray-600 transition-colors h-10 w-10 duration-300 hover:text-blue-500 dark:hover:text-blue-400"
+                        aria-label="Github">
+                        <img class="w-8 h-8  text-white transition-colors duration-200 hover:text-blue-500 fill-current"
+                            src="https://cdn-icons-png.freepik.com/256/733/733553.png?ga=GA1.1.295903305.1708038180&semt=ais"
+                            alt="">
+                    </a>
+                </div>
+                <p class="mb-4 text-3xl font-bold font-sans">Conocimientos:</p>
+                <div class="grid space-y-3 sm:gap-2 sm:grid-cols-2 sm:space-y-0">
+                    <ul class="space-y-3">
+                        <li class="flex font-semibold text-lg">
+                            <span class="mr-1">
+                                <svg class="w-5 h-5 mt-px text-deep-purple-accent-400" stroke="currentColor"
+                                    viewBox="0 0 52 52">
+                                    <polygon stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"
+                                        points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                                </svg>
+                            </span>
+                            Sistemas Operativos
+                        </li>
+                        <li class="flex font-semibold text-lg">
+                            <span class="mr-1">
+                                <svg class="w-5 h-5 mt-px text-deep-purple-accent-400" stroke="currentColor"
+                                    viewBox="0 0 52 52">
+                                    <polygon stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"
+                                        points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                                </svg>
+                            </span>
+                            Diseño interfaz de usuario
+                        </li>
+                        <li class="flex font-semibold text-lg">
+                            <span class="mr-1">
+                                <svg class="w-5 h-5 mt-px text-deep-purple-accent-400" stroke="currentColor"
+                                    viewBox="0 0 52 52">
+                                    <polygon stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"
+                                        points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                                </svg>
+                            </span>
+                            Bases de Datos
+                        </li>
+                    </ul>
+                    <ul class="space-y-3">
+                        <li class="flex font-semibold text-lg">
+                            <span class="mr-1">
+                                <svg class="w-5 h-5 mt-px text-deep-purple-accent-400" stroke="currentColor"
+                                    viewBox="0 0 52 52">
+                                    <polygon stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"
+                                        points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                                </svg>
+                            </span>
+                            Ofimatica
+                        </li>
+                        <li class="flex font-semibold text-lg">
+                            <span class="mr-1">
+                                <svg class="w-5 h-5 mt-px text-deep-purple-accent-400" stroke="currentColor"
+                                    viewBox="0 0 52 52">
+                                    <polygon stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"
+                                        points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                                </svg>
+                            </span>
+                            Desarrollo Web
+                        </li>
+                        <li class="flex font-semibold text-lg">
+                            <span class="mr-1">
+                                <svg class="w-5 h-5 mt-px text-deep-purple-accent-400" stroke="currentColor"
+                                    viewBox="0 0 52 52">
+                                    <polygon stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"
+                                        points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                                </svg>
+                            </span>
+                            Lenguajes de Programación
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="">
+                <img class="object-cover custom-border mx-auto rounded-full lg:block shrink-0 w-96 h-96"
+                    src="./fotomiaa.png" alt="">
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Aqui va las cartas -->
+    <div class="px-4 py-8 mt-20 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 "
+        id="tecnologias">
+        <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl ">
+            <h2
+                class="max-w-lg mb-6 text-center font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+                <span class="relative inline-block">
+                    <svg viewBox="0 0 52 24" fill="currentColor"
+                        class="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block">
+                        <defs>
+                            <pattern id="903f4a9e-7ac3-441c-9613-04c15fcc0a14" x="0" y="0" width=".135" height=".30">
+                                <circle cx="1" cy="1" r=".7"></circle>
+                            </pattern>
+                        </defs>
+                        <rect fill="url(#903f4a9e-7ac3-441c-9613-04c15fcc0a14)" width="52" height="24"></rect>
+                    </svg>
+                    <span class="relative">Tecnologías</span>
+                </span>
+                que he utilizado
+            </h2>
+            <p class="text-base text-gray-700 md:text-2xl">
+
+                En el desarrollo de mis proyectos, he hecho uso de diversas tecnologías, entre las cuales destacan...
+            </p>
+        </div>
+        <div class="grid grid-cols-2 gap-5 row-gap-6 mb-10 sm:grid-cols-3 lg:grid-cols-6">
+            <div class="text-center">
+                <div class="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full  sm:w-24 sm:h-24">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/1024px-HTML5_Badge.svg.png"
+                        alt="">
+                </div>
+                <h6 class="mb-2 font-semibold leading-5">HTML 5</h6>
+            </div>
+            <div class="text-center">
+                <div class="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full  sm:w-24 sm:h-24">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg" alt="">
+                </div>
+                <h6 class="mb-2 font-semibold leading-5">CSS</h6>
+            </div>
+            <div class="text-center">
+                <div class="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full  sm:w-24 sm:h-24">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png"
+                        alt="">
+                </div>
+                <h6 class="mb-2 font-semibold leading-5">Javascript</h6>
+            </div>
+            <div class="text-center">
+                <div class="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full  sm:w-24 sm:h-24">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/2048px-Python.svg.png"
+                        alt="">
+                </div>
+                <h6 class="mb-2 font-semibold leading-5">Python</h6>
+            </div>
+            <div class="text-center">
+                <div class="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full  sm:w-24 sm:h-24">
+                    <img src="https://static-00.iconduck.com/assets.00/sql-database-sql-azure-icon-1955x2048-4pmty46t.png"
+                        alt="">
+                </div>
+                <h6 class="mb-2 font-semibold leading-5">SQL</h6>
+            </div>
+            <div class="text-center">
+                <div class="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full  sm:w-24 sm:h-24">
+                    <img src="https://www.svgrepo.com/show/184143/java.svg" alt="">
+                </div>
+                <h6 class="mb-2 font-semibold leading-5">Java</h6>
+            </div>
+            <div class="text-center">
+                <div class="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full sm:w-24 sm:h-24">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png"
+                        alt="">
+                </div>
+                <h6 class="mb-2 font-semibold leading-5">PHP</h6>
+            </div>
+            <div class="text-center">
+                <div class="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full sm:w-24 sm:h-24">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/695px-C_Programming_Language.svg.png"
+                        alt="">
+                </div>
+                <h6 class="mb-2 font-semibold leading-5">C</h6>
+            </div>
+            <div class="text-center">
+                <div class="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full sm:w-24 sm:h-24">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png"
+                        alt="">
+                </div>
+                <h6 class="mb-2 font-semibold leading-5">C++</h6>
+            </div>
+            <div class="text-center">
+                <div class="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full sm:w-24 sm:h-24">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1969px-Laravel.svg.png"
+                        alt="">
+                </div>
+                <h6 class="mb-2 font-semibold leading-5">Laravel</h6>
+            </div> 
+            <div class="text-center">
+                <div class="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full  sm:w-24 sm:h-24">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
+                        alt="">
+                </div>
+                <h6 class="mb-2 font-semibold leading-5">React Js</h6>
+            </div>
+            <div class="text-center">
+                <div class="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full sm:w-24 sm:h-24">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png"
+                        alt="">
+                </div>
+                <h6 class="mb-2 font-semibold leading-5">Express</h6>
+            </div>
+            <div class="text-center">
+                <div class="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full sm:w-24 sm:h-24">
+                    <img src="https://www.svgrepo.com/show/331488/mongodb.svg"
+                        alt="">
+                </div>
+                <h6 class="mb-2 font-semibold leading-5">Mongodb</h6>
+            </div> 
+            <div class="text-center">
+                <div class="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full  sm:w-24 sm:h-24">
+                    <img src="https://cdn.worldvectorlogo.com/logos/mysql-6.svg" alt="">
+                </div>
+                <h6 class="mb-2 font-semibold leading-5">MYSQL</h6>
+            </div>
+            <div class="text-center">
+                <div class="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full sm:w-24 sm:h-24">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/1024px-Git_icon.svg.png"
+                        alt="">
+                </div>
+                <h6 class="mb-2 font-semibold leading-5">Git</h6>
+            </div>
+            <div class="text-center">
+                <div class="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full  sm:w-24 sm:h-24">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Icons8_flat_linux.svg/1200px-Icons8_flat_linux.svg.png"
+                        alt="">
+                </div>
+                <h6 class="mb-2 font-semibold leading-5">Linux</h6>
+            </div>
+            <div class="text-center">
+                <div class="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full sm:w-24 sm:h-24">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/320px-Tailwind_CSS_Logo.svg.png"
+                        alt="">
+                </div>
+                <h6 class="mb-2 font-semibold leading-5">Tailwind Css</h6>
+            </div>
+            <div class="text-center">
+                <div class="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full sm:w-24 sm:h-24">
+                    <img src="https://www.svgrepo.com/show/353498/bootstrap.svg"
+                        alt="">
+                </div>
+                <h6 class="mb-2 font-semibold leading-5">Bootstrap</h6>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROYECTOS-->
+    <section x-data="{
+        showCards: 'all',
+        activeClasses: 'bg-primary text-white',
+        inactiveClasses: 'text-body-color hover:bg-primary hover:text-white',
+    }" class="pt-10 pb-8 lg:pt-[80px] lg:pb-[70px] ">
+        <div class="container mx-auto" id="proyectos">
+            <div class="-mx-4 flex flex-wrap">
+                <div class="w-full px-4">
+                    <div class="mx-auto w-full text-center mb-6">
+                        <h1 class="bg-gradient-to-r mb-4 from-green-700 via-blue-600 to-purple-600 bg-clip-text text-4xl font-extrabold text-transparent sm:text-5xl">
+                            Proyectos Realizados
+                        </h1>
+                        <p class="md:text-xl text-black md:p-2 md:text-center p-2 text-justify text-base ">
+                            A través de estos proyectos, podrás sumergirte en mi proceso creativo y descubrir cómo
+                            abordo cada desafío con innovación y dedicación.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="-mx-4 flex flex-wrap">
+                <div :class="showCards == 'all' || showCards == 'branding' ? 'block' : 'hidden' " class="w-full px-4 md:w-1/2 lg:w-1/3">
+                    <div class="relative mb-12 p-2">
+                        <div class="overflow-hidden rounded-[10px]">
+                            <img src="./Uturi.png" alt="portfolio" class="w-full" />
+                        </div>
+                        <div class="relative z-10 rounded-lg bg-white dark:bg-dark-2 py-4 px-3 text-center shadow-portfolio dark:shadow-box-dark">
+                            <span class="text-primary mb-2 block text-sm font-medium">
+                                Trabajo Colaborativo
+                            </span>
+                            <h3 class="text-dark dark:text-white mb-2 text-xl font-bold">
+                                UTuri
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div :class="showCards == 'all' || showCards == 'marketing' ? 'block' : 'hidden' " class="w-full px-4 md:w-1/2 lg:w-1/3">
+                    <div class="relative mb-12 p-2">
+                        <div class="overflow-hidden rounded-[10px]">
+                            <img src="/Med.png" alt="portfolio" class="w-full" />
+                        </div>
+                        <div class="relative z-10 rounded-lg bg-white dark:bg-dark-2 py-4 px-3 text-center shadow-portfolio dark:shadow-box-dark">
+                            <span class="text-primary mb-2 block text-sm font-medium">
+                                Trabajo Colaborativo
+                            </span>
+                            <h3 class="text-dark dark:text-white mb-2 text-xl font-bold">
+                                Med-Health
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div :class="showCards == 'all' || showCards == 'development' ? 'block' : 'hidden' " class="w-full px-4 md:w-1/2 lg:w-1/3">
+                    <div class="relative mb-12 p-2">
+                        <div class="overflow-hidden rounded-[10px]">
+                            <img src="./Priority.png" alt="portfolio" class="w-full" />
+                        </div>
+                        <div class="relative z-10  rounded-lg bg-white dark:bg-dark-2 py-4 px-3 text-center shadow-portfolio dark:shadow-box-dark">
+                            <span class="text-primary mb-2 block text-sm font-medium">
+                                Trabajo Colaborativo
+                            </span>
+                            <h3 class="text-dark dark:text-white mb-2 text-xl font-bold">
+                                PriorityPilot
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <!--- CONTACTO-->
+
+    <section class="min-h-screen bg-white ">
+        <div class="container px-6 py-10 mx-auto ">
+            <div class="lg:flex lg:items-center lg:-mx-10" id="contacto">
+                <div class="lg:w-1/2 lg:mx-20">
+                    <h1 class="text-4xl font-semibold text-gray-800 capitalize dark:text-white ">Contactame
+                    </h1>
+
+                    <p class="mt-4 text-gray-700 font-semibold text-medium">
+                        ¡Tu mensaje es importante para mí! Hazme saber cómo puedo ayudarte.
+                    </p>
+
+                    <form id="contact-form" class="mt-8">
+                        <div class="-mx-2 md:items-center md:flex">
+                            <div class="flex-1 px-2">
+                                <label class="block mb-2 text-medium font-semibold text-black">Nombre
+                                    Completo:</label>
+                                <input id="name" type="text" placeholder="Antonio Perez"
+                                    class="block w-full px-5 py-3 mt-2 text-black  placeholder-gray-500 bg-white border border-gray-500 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                            </div>
+
+                            <div class="flex-1 px-2 mt-4 md:mt-0">
+                                <label class="block mb-2 text-medium font-semibold text-black">Correo
+                                    Electronico:</label>
+                                <input id="email" type="email" placeholder="Wil@example.com"
+                                    class="block w-full px-5 py-3 mt-2 text-black placeholder-gray-500 bg-white border border-gray-500 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                            </div>
+                        </div>
+
+                        <div class="w-full mt-4">
+                            <label class="block mb-2 text-medium font-semibold text-black">Mensaje:</label>
+                            <textarea id="message"
+                                class="block w-full h-32 px-5 py-3 mt-2 text-black  placeholder-gray-500 bg-white border border-gray-500 rounded-md md:h-56 dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                                placeholder="Redacta tu mensaje"></textarea>
+                        </div>
+
+                        <button id="send-button"
+                            class="w-full px-6 py-3 mt-4 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-green-900 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50 boton-enviar">
+                            Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+
+                <div class="mt-12 lg:flex lg:mt-0 lg:flex-col lg:items-center lg:w-1/2 lg:mx-10">
+                    <img class="object-cover w-full h-56 rounded shadow-2xl sm:h-96" src="./Sobremi_Section.gif"
+                        alt="Sobremi-section" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        const toggleMenuBtn = document.getElementById('toggleMenuBtn');
+        const navbarDefault = document.getElementById('navbar-default');
+
+        toggleMenuBtn.addEventListener('click', function () {
+            navbarDefault.classList.toggle('hidden');
+        });
+
+        const menuLinks = navbarDefault.querySelectorAll('a');
+
+        menuLinks.forEach(link => {
+            link.addEventListener('click', function () {
+                navbarDefault.classList.add('hidden');
+            });
+        });
+
+        (function () {
+            emailjs.init("5KLRbPoqlMH7vLZTx");
+        })();
+
+        document.getElementById('contact-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            var formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                message: document.getElementById('message').value
+            };
+
+            emailjs.send("service_tr9uwlb", "template_m1mfhzv", formData)
+                .then(function (response) {
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Correo enviado correctamente',
+                        showConfirmButton: false,
+                        timer: 2000
+                    });
+
+                    document.getElementById('name').value = '';
+                    document.getElementById('email').value = '';
+                    document.getElementById('message').value = '';
+                })
+                .catch(function (error) {
+                    console.log('Error al enviar correo:', error);
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Error',
+                        text: 'Hubo un error al enviar el correo. Por favor, inténtelo de nuevo más tarde.',
+                        showConfirmButton: false,
+                        timer: 2000
+                    });
+                });
+        });
+    </script>
+</body>
+
+</html>
