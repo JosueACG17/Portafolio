@@ -20,7 +20,6 @@
         display: none;
         width: 0;
     }
-    
 </style>
 
 
@@ -85,11 +84,11 @@
                                 Chan Gutierrez!
                             </span>
                         </h1>
-                        <div class="mt-10 ml-4">
+                        <div class="mt-10">
                             <p class="font-semibold text-xl text-justify text-white">
-                                ¡Bienvenido a mi mundo creativo! Soy un desarrollador con un compromiso inquebrantable
-                                hacia la excelencia y la innovación. Este espacio es una ventana a mi trayectoria, un
-                                lugar donde podrás explorar mi trabajo.
+                                ¡Bienvenido a mi espacio personal! Aquí encontrarás un universo de creatividad y
+                                desarrollo esperando ser explorado. Sumérgete en mi portafolio y descubre mis trabajos,
+                                cada uno reflejando mi dedicación por la programación y el desarrollo web.
                             </p>
                         </div>
 
@@ -115,10 +114,11 @@
                         Sobre mí
                     </h2>
                     <p class="text-lg text-black font-medium text-justify">
-                        Desde una edad temprana descubrí mi gusto por la programación, este gusto me impulsó a seguir
-                        buscando conocimientos y mejorar personalmente. A lo largo de estos años, he buscado mejorar mis
-                        habilidades y conocimientos, lo que me ha permitido lograr completar algunas metas y luchas por
-                        las demás.
+                        Desde una edad temprana, descubrí mi pasión por la programación, un impulso que me llevó a
+                        buscar constantemente conocimiento y mejorar personalmente. A lo largo de los años, he dedicado
+                        esfuerzo a fortalecer mis habilidades y ampliar mis conocimientos. Este camino me condujo al
+                        apasionante mundo del desarrollo web, donde he logrado alcanzar metas significativas y seguir
+                        luchando por nuevas metas.
                     </p>
                 </div>
                 <div class="flex -mx-2 mb-3">
@@ -319,7 +319,7 @@
                         alt="">
                 </div>
                 <h6 class="mb-2 font-semibold leading-5">Laravel</h6>
-            </div> 
+            </div>
             <div class="text-center">
                 <div class="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full  sm:w-24 sm:h-24">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
@@ -336,11 +336,10 @@
             </div>
             <div class="text-center">
                 <div class="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full sm:w-24 sm:h-24">
-                    <img src="https://www.svgrepo.com/show/331488/mongodb.svg"
-                        alt="">
+                    <img src="https://www.svgrepo.com/show/331488/mongodb.svg" alt="">
                 </div>
                 <h6 class="mb-2 font-semibold leading-5">Mongodb</h6>
-            </div> 
+            </div>
             <div class="text-center">
                 <div class="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full  sm:w-24 sm:h-24">
                     <img src="https://cdn.worldvectorlogo.com/logos/mysql-6.svg" alt="">
@@ -370,8 +369,7 @@
             </div>
             <div class="text-center">
                 <div class="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full sm:w-24 sm:h-24">
-                    <img src="https://www.svgrepo.com/show/353498/bootstrap.svg"
-                        alt="">
+                    <img src="https://www.svgrepo.com/show/353498/bootstrap.svg" alt="">
                 </div>
                 <h6 class="mb-2 font-semibold leading-5">Bootstrap</h6>
             </div>
@@ -379,76 +377,71 @@
     </div>
 
     <!-- PROYECTOS-->
-    <section x-data="{
-        showCards: 'all',
-        activeClasses: 'bg-primary text-white',
-        inactiveClasses: 'text-body-color hover:bg-primary hover:text-white',
-    }" class="pt-10 pb-8 lg:pt-[80px] lg:pb-[70px] ">
-        <div class="container mx-auto" id="proyectos">
-            <div class="-mx-4 flex flex-wrap">
-                <div class="w-full px-4">
-                    <div class="mx-auto w-full text-center mb-6">
-                        <h1 class="bg-gradient-to-r mb-4 from-green-700 via-blue-600 to-purple-600 bg-clip-text text-4xl font-extrabold text-transparent sm:text-5xl">
-                            Proyectos Realizados
+
+    <section class="bg-white dark:bg-gray-900">
+        <div class="container px-6 py-10 mx-auto">
+            <div class="items-center justify-center text-center">
+                <h1
+                    class="bg-gradient-to-r mb-4 from-green-700 via-blue-600 to-purple-600 bg-clip-text text-4xl font-extrabold text-transparent sm:text-5xl">
+                    Proyectos Realizados
+                </h1>
+                <p class="md:text-xl text-black md:p-2 md:text-center p-3 text-justify text-base ">
+                    A través de estos proyectos, podrás sumergirte en mi proceso creativo y descubrir cómo
+                    abordo cada desafío con innovación y dedicación.
+                </p>
+            </div>
+
+            <hr class="my-8 border-gray-200 dark:border-gray-700">
+
+            <div class="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
+                <div>
+                    <img class="object-center w-full h-64 rounded-lg lg:h-60" src="./Uturi.png" alt="">
+
+                    <div class="mt-8">
+                        <span class="text-blue-600 uppercase font-bold">Trabajo Colaborativo</span>
+
+                        <h1 class="mt-4 text-2xl font-semibold text-black">
+                            UTuri
                         </h1>
-                        <p class="md:text-xl text-black md:p-2 md:text-center p-2 text-justify text-base ">
-                            A través de estos proyectos, podrás sumergirte en mi proceso creativo y descubrir cómo
-                            abordo cada desafío con innovación y dedicación.
+
+                        <p class="mt-2 text-black">
+                            Desarrollo de una aplicación web para la gestión de lugares turísticos.
                         </p>
                     </div>
                 </div>
-            </div>
-            <div class="-mx-4 flex flex-wrap">
-                <div :class="showCards == 'all' || showCards == 'branding' ? 'block' : 'hidden' " class="w-full px-4 md:w-1/2 lg:w-1/3">
-                    <div class="relative mb-12 p-2">
-                        <div class="overflow-hidden rounded-[10px]">
-                            <img src="./Uturi.png" alt="portfolio" class="w-full" />
-                        </div>
-                        <div class="relative z-10 rounded-lg bg-white dark:bg-dark-2 py-4 px-3 text-center shadow-portfolio dark:shadow-box-dark">
-                            <span class="text-primary mb-2 block text-sm font-medium">
-                                Trabajo Colaborativo
-                            </span>
-                            <h3 class="text-dark dark:text-white mb-2 text-xl font-bold">
-                                UTuri
-                            </h3>
-                        </div>
+
+                <div>
+                    <img class="object-center w-full h-64 rounded-lg lg:h-60 " src="./Med.png" alt="">
+                    <div class="mt-8">
+                        <span class="text-blue-600 uppercase font-bold">Trabajo Colaborativo</span>
+                        <h1 class="mt-4 text-2xl font-semibold text-black">
+                            Med-Health
+                        </h1>
+
+                        <p class="mt-2 text-black">
+                            Desarrollo de una aplicación web enfocada en la ayuda de la salud mental de las personas.
+                        </p>
                     </div>
                 </div>
-                <div :class="showCards == 'all' || showCards == 'marketing' ? 'block' : 'hidden' " class="w-full px-4 md:w-1/2 lg:w-1/3">
-                    <div class="relative mb-12 p-2">
-                        <div class="overflow-hidden rounded-[10px]">
-                            <img src="/Med.png" alt="portfolio" class="w-full" />
-                        </div>
-                        <div class="relative z-10 rounded-lg bg-white dark:bg-dark-2 py-4 px-3 text-center shadow-portfolio dark:shadow-box-dark">
-                            <span class="text-primary mb-2 block text-sm font-medium">
-                                Trabajo Colaborativo
-                            </span>
-                            <h3 class="text-dark dark:text-white mb-2 text-xl font-bold">
-                                Med-Health
-                            </h3>
-                        </div>
-                    </div>
-                </div>
-                <div :class="showCards == 'all' || showCards == 'development' ? 'block' : 'hidden' " class="w-full px-4 md:w-1/2 lg:w-1/3">
-                    <div class="relative mb-12 p-2">
-                        <div class="overflow-hidden rounded-[10px]">
-                            <img src="./Priority.png" alt="portfolio" class="w-full" />
-                        </div>
-                        <div class="relative z-10  rounded-lg bg-white dark:bg-dark-2 py-4 px-3 text-center shadow-portfolio dark:shadow-box-dark">
-                            <span class="text-primary mb-2 block text-sm font-medium">
-                                Trabajo Colaborativo
-                            </span>
-                            <h3 class="text-dark dark:text-white mb-2 text-xl font-bold">
-                                PriorityPilot
-                            </h3>
-                        </div>
+
+                <div>
+                    <img class=" object-center w-full h-64 rounded-lg lg:h-60" src="./Priority.png" alt="">
+
+                    <div class="mt-8">
+                        <span class="text-blue-600 uppercase font-bold">Trabajo Colaborativo</span>
+
+                        <h1 class="mt-4 text-2xl font-semibold text-black">
+                            PriorityPilot
+                        </h1>
+
+                        <p class="mt-2 text-black">
+                            Desarrollo de una aplicación web para la Gestión de Proyectos Empresariales.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
-
 
     <!--- CONTACTO-->
 
@@ -466,10 +459,9 @@
                     <form id="contact-form" class="mt-8">
                         <div class="-mx-2 md:items-center md:flex">
                             <div class="flex-1 px-2">
-                                <label class="block mb-2 text-medium font-semibold text-black">Nombre
-                                    Completo:</label>
+                                <label class="block mb-2 text-medium font-semibold text-black">Nombre Completo:</label>
                                 <input id="name" type="text" placeholder="Antonio Perez"
-                                    class="block w-full px-5 py-3 mt-2 text-black  placeholder-gray-500 bg-white border border-gray-500 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                                    class="block w-full px-5 py-3 mt-2 text-black placeholder-gray-500 bg-white border border-gray-500 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
                             </div>
 
                             <div class="flex-1 px-2 mt-4 md:mt-0">
@@ -483,11 +475,11 @@
                         <div class="w-full mt-4">
                             <label class="block mb-2 text-medium font-semibold text-black">Mensaje:</label>
                             <textarea id="message"
-                                class="block w-full h-32 px-5 py-3 mt-2 text-black  placeholder-gray-500 bg-white border border-gray-500 rounded-md md:h-56 dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                                class="block w-full h-32 px-5 py-3 mt-2 text-black placeholder-gray-500 bg-white border border-gray-500 rounded-md md:h-56 dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
                                 placeholder="Redacta tu mensaje"></textarea>
                         </div>
 
-                        <button id="send-button"
+                        <button type="submit" id="send-button"
                             class="w-full px-6 py-3 mt-4 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-green-900 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50 boton-enviar">
                             Enviar Mensaje
                         </button>
@@ -529,10 +521,29 @@
         document.getElementById('contact-form').addEventListener('submit', function (event) {
             event.preventDefault();
 
+            var nameInput = document.getElementById('name');
+            var emailInput = document.getElementById('email');
+            var messageInput = document.getElementById('message');
+
+            var name = nameInput.value.trim();
+            var email = emailInput.value.trim();
+            var message = messageInput.value.trim();
+
+            if (name === '' || email === '' || message === '') {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Error',
+                    text: 'Por favor completa todos los campos',
+                    showConfirmButton: false,
+                    timer: 1000
+                });
+                return; 
+            }
+
             var formData = {
-                name: document.getElementById('name').value,
-                email: document.getElementById('email').value,
-                message: document.getElementById('message').value
+                name: name,
+                email: email,
+                message: message
             };
 
             emailjs.send("service_tr9uwlb", "template_m1mfhzv", formData)
@@ -544,9 +555,9 @@
                         timer: 2000
                     });
 
-                    document.getElementById('name').value = '';
-                    document.getElementById('email').value = '';
-                    document.getElementById('message').value = '';
+                    nameInput.value = '';
+                    emailInput.value = '';
+                    messageInput.value = '';
                 })
                 .catch(function (error) {
                     console.log('Error al enviar correo:', error);
@@ -559,6 +570,8 @@
                     });
                 });
         });
+
+
     </script>
 </body>
 
