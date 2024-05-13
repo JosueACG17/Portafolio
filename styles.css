@@ -1,3 +1,7 @@
+body{
+  background-color: #ebfffe;
+}
+
 .header{
   background-color: #033342;
   
@@ -20,6 +24,15 @@
   background-color: #04819a;
 }
 
+.proyectos{
+  background-color: #ebfffe;
+}
+
+.contacto{
+  background-color: #ebfffe;
+}
+
+
 .swiper-slide img {
   width: 100%;
   height: auto;
@@ -32,4 +45,5 @@
 .custom-border {
   border: 6px solid #045d78; 
 }
+
 
